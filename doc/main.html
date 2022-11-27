@@ -1,12 +1,10 @@
-<!DOCTYPE html lang="en">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head itemscope="itemscope" itemtype="http://smpte.org/standards/documents">
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="tooling/smpte.js"></script>
-  <link rel="stylesheet" href="tooling/smpte.css" />
   <!-- Do not edit above this line -->
   <!-- Start of editable section in header-->
   <!-- Update only content attributes in each meta element below as needed -->
@@ -75,7 +73,7 @@
 
     <!-- Use the `ul` element to list external documents where Terms are defined (use same logic as referenced docs in the body of the document as example shows). Add `dt/dd` sub element pairs as needed for Terms to be defined internally in this document. Remove either the `ul` if no external Terms, or `dl` if no internally defined Terms. If no Terms needed to be defined at all, remove the both `ul` and `dl` elements. Pre text for this section is auto generated based on what elements are present. -->
 
-    <ul id="terms-ext-defs" itemscope="http://smpte.org/standards/external-definitions">
+    <ul id="terms-ext-defs" itemscope="itemscope" itemtype="http://smpte.org/standards/external-definitions">
       <li><a itemprop="external" href="#bib-smpte-standards-operation-manual"></a></li>
     </ul>
 
@@ -99,7 +97,7 @@
   </section>
 
 
-  <section id="sec-general">
+  <section id="sec-templates">
     <h2>Templates</h2>
     <p>An Engineering Document shall use an appropriate template specified in <a href="#bib-smpte-ag-04-st"></a>, <a href="#bib-smpte-ag-04-rp"></a>, or <a href="#bib-smpte-ag-04-eg"></a>, unless:</p>
     <ul>
@@ -150,20 +148,16 @@
       <section id="sec-variances-references-forms-for-making-references">
         <h4>Forms for making references</h4>
         <p>The following forms should be used to make references to a document, a part of a document or a non-prose element:</p>
-        <ul>
-          <li>imperative forms</li>
-          <ul>
-            <li>"see"</li>
-          </ul>
-          <li>non-imperative forms</li>
-          <ul>
-            <li>"according to"</li>
-            <li>"as defined in"</li>
-            <li>"as specified in"</li>
-            <li>"details as given in"</li>
-            <li>"in accordance with"</li>
-          </ul>
-        </ul>
+        <dl>
+          <dt>imperative forms<dt>
+          <dd>"see"</dd>
+          <dt>non-imperative forms</dt>
+          <dd>"according to"</dd>
+          <dd>"as defined in"</dd>
+          <dd>"as specified in"</dd>
+          <dd>"details as given in"</dd>
+          <dd>"in accordance with"</dd>
+        </dl>
 
         <p class="note">Imperative forms are not used in informative parts of the document, such as examples, notes and footnotes.</p>
 
@@ -302,12 +296,12 @@ This annex lists non-prose elements of this document.
         <p>Engineering Documents shall use US number formats.</p>
         <p>The decimal separator is "<code>.</code>".</p>
         <p>A comma "<code>,</code>" may be used to separate each group of three digits above the decimal point.</p>
-        <p class="example">
+        <div class="example">
 <pre>
 0.01
 1,234.56
 </pre>
-        </p>
+        </div>
       </section>
 
       <section id="sec-variances-references-numbers-engineering-notation">
