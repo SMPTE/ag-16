@@ -13,6 +13,7 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: true
+      - run: git branch
       - uses: ./doc/tooling/workflows
         with:
           AWS_S3_REGION: ${{ secrets.AWS_S3_REGION }}
