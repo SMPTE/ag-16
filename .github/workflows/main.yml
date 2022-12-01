@@ -9,12 +9,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
+        with
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: true
       - name: Check-out all branches
-        run: for i in `git branch -a | grep remote | grep -v HEAD | grep -v "\-\>""`; do git branch --track ${i#remotes/origin/} $i; done
+        run: for i in `git branch -a | grep remote | grep -v HEAD | grep -v "\-\>"`; do git branch --track ${i#remotes/origin/} $i; done
       - uses: ./doc/tooling/workflows
         with:
           AWS_S3_REGION: ${{ secrets.AWS_S3_REGION }}
