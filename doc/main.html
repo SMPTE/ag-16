@@ -1,18 +1,16 @@
-<!DOCTYPE html lang="en">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head itemscope="itemscope" itemtype="http://smpte.org/standards/documents">
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="tooling/smpte.js"></script>
-  <link rel="stylesheet" href="tooling/smpte.css" />
   <!-- Do not edit above this line -->
   <!-- Start of editable section in header-->
   <!-- Update only content attributes in each meta element below as needed -->
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="16" />
-  <meta itemprop="pubState" content="published" />
+  <meta itemprop="pubState" content="pub" />
   <meta itemprop="pubDateTime" content="2022-12-06" />
   <!-- update text for title element as needed -->
   <title>Standards Style Guide</title>
@@ -60,9 +58,7 @@
       <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents (Ninth edition, 2021)
         <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
       <li><cite id="bib-iso-80000">ISO 80000 (all parts)</cite>, Quantities and units</li>
-      <li><cite id="bib-iso-80000-1">ISO 80000-1</cite>, Quantities and units — Part 1: General
-        <a>https://www.iso.org/standard/30669.html</a></li>
-      <li><cite id="bib-iso-8601-2014">ISO 8601:2004</cite>, Data elements and interchange formats — Information interchange — Representation of dates and times
+      <li><cite id="bib-iso-8601-2004">ISO 8601</cite>, Data elements and interchange formats — Information interchange — Representation of dates and times (2004)
         <a>https://www.iso.org/standard/40874.html</a></li>
       <li><cite id="bib-iso-iec-10646">ISO/IEC 10646</cite>, Information technology — Universal coded character set (UCS)
         <a>https://www.iso.org/standard/76835.html</a></li>
@@ -77,7 +73,7 @@
 
     <!-- Use the `ul` element to list external documents where Terms are defined (use same logic as referenced docs in the body of the document as example shows). Add `dt/dd` sub element pairs as needed for Terms to be defined internally in this document. Remove either the `ul` if no external Terms, or `dl` if no internally defined Terms. If no Terms needed to be defined at all, remove the both `ul` and `dl` elements. Pre text for this section is auto generated based on what elements are present. -->
 
-    <ul id="terms-ext-defs" itemscope="http://smpte.org/standards/external-definitions">
+    <ul id="terms-ext-defs" itemscope="itemscope" itemtype="http://smpte.org/standards/external-definitions">
       <li><a itemprop="external" href="#bib-smpte-standards-operation-manual"></a></li>
     </ul>
 
@@ -101,7 +97,7 @@
   </section>
 
 
-  <section id="sec-general">
+  <section id="sec-templates">
     <h2>Templates</h2>
     <p>An Engineering Document shall use an appropriate template specified in <a href="#bib-smpte-ag-04-st"></a>, <a href="#bib-smpte-ag-04-rp"></a>, or <a href="#bib-smpte-ag-04-eg"></a>, unless:</p>
     <ul>
@@ -152,20 +148,16 @@
       <section id="sec-variances-references-forms-for-making-references">
         <h4>Forms for making references</h4>
         <p>The following forms should be used to make references to a document, a part of a document or a non-prose element:</p>
-        <ul>
-          <li>imperative forms</li>
-          <ul>
-            <li>"see"</li>
-          </ul>
-          <li>non-imperative forms</li>
-          <ul>
-            <li>"according to"</li>
-            <li>"as defined in"</li>
-            <li>"as specified in"</li>
-            <li>"details as given in"</li>
-            <li>"in accordance with"</li>
-          </ul>
-        </ul>
+        <dl>
+          <dt>imperative forms<dt>
+          <dd>"see"</dd>
+          <dt>non-imperative forms</dt>
+          <dd>"according to"</dd>
+          <dd>"as defined in"</dd>
+          <dd>"as specified in"</dd>
+          <dd>"details as given in"</dd>
+          <dd>"in accordance with"</dd>
+        </dl>
 
         <p class="note">Imperative forms are not used in informative parts of the document, such as examples, notes and footnotes.</p>
 
@@ -304,12 +296,12 @@ This annex lists non-prose elements of this document.
         <p>Engineering Documents shall use US number formats.</p>
         <p>The decimal separator is "<code>.</code>".</p>
         <p>A comma "<code>,</code>" may be used to separate each group of three digits above the decimal point.</p>
-        <p class="example">
+        <div class="example">
 <pre>
 0.01
 1,234.56
 </pre>
-        </p>
+        </div>
       </section>
 
       <section id="sec-variances-references-numbers-engineering-notation">
@@ -336,12 +328,12 @@ This annex lists non-prose elements of this document.
       <p>Dates shall:</p>
       <ul>
         <li>be written as <code>YYYY-MM-DD</code>, e.g. 2009-04-23 to indicate April 23, 2009; or</li>
-        <li>conform to <a href="#bib-iso-8601-2014"></a>, including additional time zone metadata.</li>
+        <li>conform to <a href="#bib-iso-8601-2004"></a>, including additional time zone metadata.</li>
       </ul>
       <p>Times shall:</p>
       <ul>
         <li>be written as one of <code>hh:mm</code>, <code>hh:mm:ss</code>, where <code>hh</code> is the hour (in a 24-hour day), <code>mm</code> are the minutes and <code>ss</code> are the seconds; or </li>
-        <li>conform to <a href="#bib-iso-8601-2014"></a>.</li>
+        <li>conform to <a href="#bib-iso-8601-2004"></a>.</li>
       </ul>
 
       <p>The above only apply to calendar dates and time, and do not apply to timecode and other forms of media time. The latter can, for example, include an <code>ff</code> suffix to denote a frame count.</p>
@@ -404,6 +396,8 @@ This annex lists non-prose elements of this document.
   <ul>
     <li><cite id="bib-draft-bhutton-json-schema-00">IETF draft-bhutton-json-schema-00</cite>, Wright, A., H. Andrews; B. Hutton, G. Dennis, "JSON Schema: A Media Type for Describing JSON Documents", Work in Progress, December 8, 2020.
     <a>https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00</a></li>
+    <li><cite id="bib-iso-80000-1">ISO 80000-1</cite>, Quantities and units — Part 1: General
+    <a>https://www.iso.org/standard/30669.html</a></li>
   </ul>
 </section>
 <!-- End of Bibliography -->
