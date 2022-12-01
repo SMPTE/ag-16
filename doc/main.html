@@ -115,20 +115,20 @@
     <h2>Variances</h2>
     <section id="sec-variances-foreword">
       <h3>Foreword</h3>
-      <p>The <code>Foreword</code> is fixed text provided by the SMPTE Director of Standards.</p>
-      <p>In addition to the information listed in <a href="#bib-iso-directives-part2"></a>, the <code>Foreword</code> includes a definition of conformance terms, as specified in the <a href="#bib-smpte-standards-operation-manual"></a>.</p>
+      <p>The <i>Foreword</i> is fixed text provided by the SMPTE Director of Standards.</p>
+      <p>In addition to the information listed in <a href="#bib-iso-directives-part2"></a>, the <i>Foreword</i> includes a definition of conformance terms, as specified in the <a href="#bib-smpte-standards-operation-manual"></a>.</p>
     </section>
 
     <section id="sec-variances-introduction">
       <h3>Introduction</h3>
-      <p>In addition to the information listed in <a href="#bib-iso-directives-part2"></a>, the <code>Introduction</code> shall include:</p>
+      <p>In addition to the information listed in <a href="#bib-iso-directives-part2"></a>, the <i>Introduction</i> shall include:</p>
       <ul>
         <li>the statement referred to at subclause 9.1.7 of the <a href="#bib-smpte-standards-operation-manual"></a>; and</li>
         <li>a statement that the clause is entirely informative and does not form an integral part of the Engineering Document.</li>
       </ul>
 
       <p class="note">
-        The <code>Introduction</code> is a mandatory element in Engineering Documents since it is never empty.
+        The <i>Introduction</i> is a mandatory element in Engineering Documents since it is never empty.
       </p>
     </section>
 
@@ -166,32 +166,32 @@
 
       <section id="sec-variances-references-references-to-a-non-prose-element">
         <h4>References to a non-prose element</h4>
-        <p>A reference to a non-prose element shall be made using the following form:</p>
+        <p>A reference to a non-prose element shall be made using the form
 
-<pre>
+<i>
 element x
-</pre>
+</i>
+        
+        where <i>x</i> is the letter of the non-prose element, as defined in <a href="#bib-smpte-ag-02"></a>.</p>
 
-        <p>where <code>x</code> is the letter of the non-prose element, as defined in <a href="#bib-smpte-ag-02"></a>.</p>
-
-        <p class="example">"...as defined in element <code>a</code> of this document."</p>
+        <p class="example">"...as defined in element a of this document."</p>
       </section>
 
     </section>
 
     <section id="sec-variances-references-introductory-wording-of-terms-and-definitions">
       <h3>Introductory wording of terms and definitions</h3>
-      <p>One of the following sentences shall be used as introductory text to the <code>Terms and Definitions</code> clause:</p>
+      <p>One of the following sentences shall be used as introductory text to the <i>Terms and Definitions</i> clause:</p>
 
       <ul>
-        <li>"For the purposes of this document, the following terms and definitions apply:", if all relevant terms and definitions are provided in <code>Terms and Definitions</code> clause.</li>
+        <li>"For the purposes of this document, the following terms and definitions apply:", if all relevant terms and definitions are provided in <i>Terms and Definitions</i> clause.</li>
         <li>"For the purposes of this document, the terms and definitions given in [external reference(s)] apply.", if all relevant terms and definitions are provided in external references.</li>
-        <li>"For the purposes of this document, the terms and definitions given in [external reference(s)] and the following apply:", if all relevant terms and definitions are provided in the <code>Terms and Definitions</code> clause and external documents.</li>
+        <li>"For the purposes of this document, the terms and definitions given in [external reference(s)] and the following apply:", if all relevant terms and definitions are provided in the <i>Terms and Definitions</i> clause and external documents.</li>
         <li>"No terms and definitions are listed in this document.", if no terms and definitions are provided.</li>
       </ul>
 
       <p class="note">
-        The introductory text is not a hanging paragraph, as the <code>Terms and Definitions</code> clause consists of a list of terminological entries and not subclauses.
+        The introductory text is not a hanging paragraph, as the <i>Terms and Definitions</i> clause consists of a list of terminological entries and not subclauses.
       </p>
     </section>
 
@@ -207,12 +207,12 @@ element x
 
       <section id="sec-variances-references-symbols-and-abbreviated-terms-bit">
         <h4>Bit</h4>
-        <p>The term <code>bit</code> shall not be abbreviated.</p>
+        <p>The term <i>bit</i> shall not be abbreviated.</p>
       </section>
 
       <section id="sec-variances-references-symbols-and-abbreviated-terms-imperial-system-of-units">
         <h4>Imperial system of units</h4>
-        <p>The unit of length <code>inch</code> shall not be abbreviated.</p>
+        <p>The unit of length <i>inch</i> shall not be abbreviated.</p>
       </section>
 
     </section>
@@ -220,7 +220,7 @@ element x
     <section id="sec-variances-references-non-prose-elements-of-the-engineering-document">
       <h3>Non-prose elements of the Engineering Document</h3>
       <p>All non-prose elements of the Engineering Document, as defined in <a href="#bib-smpte-ag-02"></a>, shall be explicitly referred to within the prose element.</p>
-      <p>All non-prose elements of the Engineering Document shall be listed in an informative annex titled <code>Additional elements</code>, which shall be the final annex of the document.</p>
+      <p>All non-prose elements of the Engineering Document shall be listed in an informative annex titled <i>Additional elements</i>, which shall be the final annex of the document.</p>
 
       <p>This annex shall be introduced by the following sentence:</p>
 
@@ -294,8 +294,8 @@ This annex lists non-prose elements of this document.
       <section id="sec-variances-references-numbers-general">
         <h4>General</h4>
         <p>Engineering Documents shall use US number formats.</p>
-        <p>The decimal separator is "<code>.</code>".</p>
-        <p>A comma "<code>,</code>" may be used to separate each group of three digits above the decimal point.</p>
+        <p>The decimal separator is a U+002E FULL STOP (.).</p>
+        <p>A U+002C COMMA (,) may be used to separate each group of three digits above the decimal point.</p>
         <div class="example">
 <pre>
 0.01
@@ -306,8 +306,8 @@ This annex lists non-prose elements of this document.
 
       <section id="sec-variances-references-numbers-engineering-notation">
         <h4>Engineering notation</h4>
-        <p>Numbers shall not use the E-notation, where a multiplication by powers of 10 is replaced by the letter <code>e</code>.</p>
-        <p class="example">The number <code>0.0003</code> can be written <code>3 × 10−4</code> but is never written <code>3e−4</code>.</p>
+        <p>Numbers shall not use the E-notation, where a multiplication by powers of 10 is replaced by the letter <i>e</i>.</p>
+        <p class="example">The number <i>0.0003</i> can be written <i>3 × 10−4</i> but is never written <i>3e−4</i>.</p>
 
         <p class="note">Number forms are specified in <a href="#bib-iso-80000-1"></a>.</p>
       </section>
@@ -320,14 +320,14 @@ This annex lists non-prose elements of this document.
 <pre>
 0xdd...dd
 </pre>
-      <p>where each character <code>d</code> belongs to the set {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f}.</p>
+      <p>where each character <code>d</code> belongs to the set <code>{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f}</code>.</p>
     </section>
     
     <section id="sec-variances-references-calendar-dates-and-times">
       <h3>Calendar dates and times</h3>
       <p>Dates shall:</p>
       <ul>
-        <li>be written as <code>YYYY-MM-DD</code>, e.g. 2009-04-23 to indicate April 23, 2009; or</li>
+        <li>be written as <code>YYYY-MM-DD</code>, e.g. <code>2009-04-23</code> to indicate April 23, 2009; or</li>
         <li>conform to <a href="#bib-iso-8601-2004"></a>, including additional time zone metadata.</li>
       </ul>
       <p>Times shall:</p>
@@ -351,7 +351,7 @@ This annex lists non-prose elements of this document.
     <p>The terms listed in <a href="#table-exclusionary-and-offensive-terminology"></a>, when used in the specified context(s), shall not be present in a document, unless the term is necessary to interpret a normative reference, in which case the use of the term shall be minimized. <a href="#table-exclusionary-and-offensive-terminology"></a> also provides example alternative terms. Terminology should be consistent across documents of the same domain.</p>
 
     <p class="note">
-      Minimizing the use of a term can be achieved by defining an alias in the <code>Terms and definitions</code> clause.
+      Minimizing the use of a term can be achieved by defining an alias in the <i>Terms and definitions</i> clause.
     </p>
 
     <table id="table-exclusionary-and-offensive-terminology">
