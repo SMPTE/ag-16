@@ -10,3 +10,7 @@
 
 # Windows
 Thumbs.db
+.vscode
+
+# npm
+/node_modules
