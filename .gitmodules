@@ -1,4 +1,4 @@
 [submodule "doc/tooling"]
-	path = doc/tooling
+	path = tooling
 	url = https://github.com/SMPTE/html-pub.git
 	branch = main
