@@ -2,7 +2,9 @@
 
 _This repository is *public*._
 
-[Latest draft](http://smpte-pub-exp.s3-website-us-west-1.amazonaws.com/ag16/main/).
+[Latest draft](https://doc.smpte-doc.org/ag-16/main/).
+
+[Redline against the latest edition](https://doc.smpte-doc.org/ag-16/main/pub-rl.html).
 
 Please consult [CONTRIBUTING.md](./CONTRIBUTING.md), [CONFIDENTIALITY.md](./CONFIDENTIALITY.md), [LICENSE.md](./LICENSE.md) and
 [PATENTS.md](./PATENTS.md) for important notices.
