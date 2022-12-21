@@ -49,8 +49,8 @@ jobs:
           CANONICAL_LINK_PREFIX: ${{env.CANONICAL_LINK_PREFIX}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Build and deploy document (HTML Pib repo)
-        uses: ./tooling/workflows
+      - name: Build and deploy document (HTML Pub repo)
+        uses: ./workflows
         if: github.repository == 'SMPTE/html-pub'
         with:
           AWS_S3_REGION: ${{env.AWS_REGION}}
