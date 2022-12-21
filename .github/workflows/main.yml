@@ -37,7 +37,7 @@ jobs:
           role-to-assume: ${{ env.AWS_ROLE }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - uses: ./workflows
+      - uses: ./tooling/workflows
         with:
           AWS_S3_REGION: ${{env.AWS_REGION}}
           AWS_S3_BUCKET: 	${{env.AWS_S3_BUCKET}}
