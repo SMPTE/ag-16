@@ -8,7 +8,7 @@
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="16" />
   <meta itemprop="pubState" content="pub" />
-  <meta itemprop="pubDateTime" content="2025-03-25" />
+  <meta itemprop="pubDateTime" content="2026-01-21" />
   <title>Standards Style Guide</title>
 </head>
 
@@ -35,12 +35,15 @@
       <li><cite id="bib-iso-directives-part2">ISO/IEC Directives, Part 2</cite>, Principles and rules for the structure and drafting of ISO and IEC documents (Ninth edition, 2021)
         <a>https://www.iso.org/sites/directives/current/part2/index.xhtml</a></li>
       <li><cite id="bib-iso-80000">ISO 80000 (all parts)</cite>, Quantities and units</li>
-      <li><cite id="bib-iso-8601-2004">ISO 8601</cite>, Data elements and interchange formats — Information interchange — Representation of dates and times (2004)
-        <a>https://www.iso.org/standard/40874.html</a></li>
+      <li><cite id="bib-iso-8601-1">ISO 8601-1</cite> (latest edition), Date and time — Representations for information interchange
+        <a>https://www.iso.org/standard/70907.html</a>
+      </li>
       <li><cite id="bib-iso-iec-10646">ISO/IEC 10646</cite>, Information technology — Universal coded character set (UCS)
         <a>https://www.iso.org/standard/76835.html</a></li>
-      <li><cite id="bib-strunk-elements-style">William Strunk, Jr. and E. B. White, Elements of Style, Fourth Edition, Longman, 1999</cite></li>
-      <li><cite id="bib-oxford-dictionary">New Oxford American Dictionary, Third Edition, 2010</cite></li>
+      <li>William Strunk, Jr. and E. B. White, <cite id="bib-strunk-elements-style">Elements of Style, Fourth Edition</cite>, Longman, 1999; ISBN 978-0-205-30902-3</li>
+      <li><cite id="bib-oxford-dictionary">New Oxford American Dictionary, Third Edition</cite>, 2010;  ISBN 0-195-39288-4
+      <span class="doi">10.1093/acref/9780195392883.001.0001</span>
+      </li>
     </ul>
   </section>
  
@@ -134,9 +137,14 @@
           <dd>"in accordance with"</dd>
         </dl>
 
-        <p class="note">Imperative forms are not used in informative parts of the document, such as examples, notes and footnotes.</p>
+        <p class="note">Imperative forms are not used in informative parts of the document, such as Bibliography, examples, notes, and footnotes.</p>
 
         <p class="note">The terms clause and subclause, instead of the term "section", are used to refer to the subdivisions of a document.</p>
+      </section>
+
+      <section id="sec-variances-bibligraphy-presentation-of-references">
+        <h4>Bibliographic References</h4>
+        <p>Only references cited informatively in the document shall be listed in the Bibliography clause.</p>
       </section>
 
       <section id="sec-variances-references-references-to-a-non-prose-element">
@@ -251,11 +259,11 @@ The following are the non-prose elements of this document:
         <h4>General</h4>
         <p>Engineering Documents shall use US number formats.</p>
         <p>The decimal separator is a U+002E FULL STOP (.).</p>
-        <p>A U+002C COMMA (,) may be used to separate each group of three digits above the decimal point.</p>
+        <p>There shall not be any seperation character(s) for each group of three digits above the decimal point.</p>
         <div class="example">
 <pre>
 0.01
-1,234.56
+1234.56
 </pre>
         </div>
       </section>
@@ -284,12 +292,12 @@ The following are the non-prose elements of this document:
       <p>Dates shall:</p>
       <ul>
         <li>be written as <code>YYYY-MM-DD</code>, e.g. <code>2009-04-23</code> to indicate April 23, 2009; or</li>
-        <li>conform to <a href="#bib-iso-8601-2004"></a>, including additional time zone metadata.</li>
+        <li>conform to <a href="#bib-iso-8601-1"></a>, including additional time zone metadata.</li>
       </ul>
       <p>Times shall:</p>
       <ul>
         <li>be written as one of <code>hh:mm</code>, <code>hh:mm:ss</code>, where <code>hh</code> is the hour (in a 24-hour day), <code>mm</code> are the minutes and <code>ss</code> are the seconds; or </li>
-        <li>conform to <a href="#bib-iso-8601-2004"></a>.</li>
+        <li>conform to <a href="#bib-iso-8601-1"></a>.</li>
       </ul>
 
       <p>The above only apply to calendar dates and time, and do not apply to timecode and other forms of media time. The latter can, for example, include an <code>ff</code> suffix to denote a frame count.</p>
@@ -311,7 +319,7 @@ The following are the non-prose elements of this document:
     </p>
 
     <table id="table-exclusionary-and-offensive-terminology">
-      <caption class="tablecaption">Exclusionary and offensive terminology.</caption>
+      <caption class="tablecaption">Exclusionary and offensive terminology  </caption>
       <thead>
         <tr>
           <th>Term </th>
@@ -339,6 +347,16 @@ The following are the non-prose elements of this document:
           <td>whitelist </td>
           <td><em>any</em></td>
           <td>allowlist, allow, accesslist, permit </td>
+        </tr>
+        <tr>
+          <td>sub-black </td>
+          <td><em>any</em></td>
+          <td>below black, below nominal black, below‑reference black, negative luminance level </td>
+        </tr>
+        <tr>
+          <td>super-white </td>
+          <td><em>any</em></td>
+          <td>above white, above nominal white, above‑reference white, extended‑range white </td>
         </tr>
       </tbody>
     </table>
